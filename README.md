@@ -1,10 +1,10 @@
 # Qube Movie Website
 
-    How To Create Responsive Movie Website Using HTML CSS And jQuery
+    Creating Responsive Movie Website Using HTML CSS And jQuery
 
 # Preview
 
-This is a movie streaming website as part of my learning outcomes.
+    This is a movie streaming website as part of my learning outcomes.
 
 # Description
 
