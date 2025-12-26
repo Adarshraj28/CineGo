@@ -19,11 +19,14 @@ html {
 }
 
 body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
     font-family: "Cairo", sans-serif;
     background-color: var(--body-bg);
     color: var(--text-color);
     padding-top: var(--nav-height);
-}
 
 a {
     text-decoration: none;
@@ -51,19 +54,31 @@ img {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
 .nav-wrapper {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
-    background-color: #000000;
+    z-index: 1000;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    transition: 0.3s ease, padding 0.3s ease;
+    padding: 10px 0;
+    transition: 0.3s ease, padding 0.3s ease;
+}
+
+.nav-wrapper.scrolled {
+    background: transparent;  /* Darker when scrolling */
+    padding: 5px 0;
 }
 
 .nav {
     display: flex;
+    grid-tempelate-columns: auto 1fr auto;
     align-items: center;
     justify-content: space-between;
     color: var(--text-color);
