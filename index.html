@@ -23,31 +23,71 @@
 <body>
 
     <!-- NAV -->
+    <!-- NAV -->
     <div class="nav-wrapper">
-        <div class="container">
-            <div class="nav">
-                <a href="#" class="logo">
-                    <i class='bx bx-movie-play bx-tada main-color'></i>Qu<span class="main-color">b</span>e
-                </a>
-                <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Genre</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">About</a></li>
-                    <li>
-                        <a href="#" class="btn btn-hover">
-                            <span>Sign in</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- MOBILE MENU TOGGLE -->
-                <div class="hamburger-menu" id="hamburger-menu">
-                    <div class="hamburger"></div>
+        <div class="nav">
+
+    <!-- LEFT -->
+    <a href="#" class="logo">
+        <i class='bx bx-movie-play bx-tada main-color'></i>Qu<span class="main-color">b</span>e
+    </a>
+
+    <!-- CENTER -->
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="#" id="homeBtn">Home</a></li>
+        <li><a href="#" id="genreBtn">Genre</a></li>
+        <li><a href="#" id="movieBtn">Movies</a></li>
+        <li><a href="#" id="seriesBtn">Series</a></li>
+        <li><a href="#" id="aboutBtn">About</a></li>
+    </ul>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+        <div class="user-menu">
+
+    <!-- SEARCH BOX -->
+    <div class="nav-search">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search movies, series..."
+            autocomplete="off"
+        >
+
+        <i id="searchIcon" class="bx bx-search"></i>
+        <div id="searchSuggestions" class="search-suggestions hidden"></div>
+    </div>
+
+    </div>
+   
+        <div class="user-menu">
+            <a href="#" class="user-icon">
+                <i class='bx bxs-user'></i>
+            </a>
+
+            <div class="dropdown-card">
+                <div class="dropdown-header">
+                    <img src="https://via.placeholder.com/40" class="profile-img">
+                    <div class="user-info">
+                        <p class="user-name">John Doe</p>
+                        <p class="user-email">john@example.com</p>
+                    </div>
                 </div>
+                <ul class="dropdown-actions">
+                    <li><a href="account.html">My Account</a></li>
+                    <li><a href="#" id="switchAccount">Switch Account</a></li>
+                    <li><a href="#" id="signOut">Sign Out</a></li>
+                </ul>
             </div>
         </div>
     </div>
+
+    <!-- MOBILE -->
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="hamburger"></div>
+    </div>
+
+</div>
     <!-- END NAV -->
 
     <!-- HERO SECTION -->
